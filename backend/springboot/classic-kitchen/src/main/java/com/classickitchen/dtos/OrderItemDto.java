@@ -1,5 +1,7 @@
 package com.classickitchen.dtos;
 
+import org.springframework.data.domain.jaxb.SpringDataJaxb.OrderDto;
+
 import com.classickitchen.entities.MenuItem;
 
 import lombok.Data;
@@ -9,7 +11,7 @@ public class OrderItemDto {
 
     private Long id;
 
-    private String order;
+    private OrderDto order;
 
     private MenuItem item;
 
